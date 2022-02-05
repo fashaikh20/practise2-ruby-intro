@@ -11,6 +11,13 @@
 # sort the result (alphabetically), and write it to the screen.
 # If the two lists contain the same item, only show it once!
 
+your_list = ["milk", "eggs", "bacon"]
+friend_list = ["beer", "cookies", "apples"]
+combine_list = your_list + friend_list
+puts combine_list.sort
+
+
+
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html

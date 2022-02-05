@@ -13,6 +13,19 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
+dice_1 = rand(1..6)
+dice_2 = rand(1..6)
+craps = dice_1 + dice_2
+# puts "Your total score is #{craps}"
+
+if craps == 7 || craps == 11
+    puts "YOU WIN"
+elsif craps == 2 || craps == 3 || craps == 12
+    puts "YOU LOSE!"
+else 
+    puts "THE POINT IS #{craps}"
+end
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)

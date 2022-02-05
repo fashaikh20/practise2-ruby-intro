@@ -8,6 +8,13 @@
 
 # Currently it is 67 degrees and sunny. Tomorrow it will be 65 and Mostly Cloudy.
 # The next day it we will see Partly Cloudy skies, with a temperature of 70.
+# current_temp = 67 degrees
+# tomorrow_temp = 65 degrees
+# next_temp = 70 degrees
+# current_weather = "sunny"
+# tomorrow_weather = "mostly cloud"
+# next_weather = "partly cloud"
+
 
 # HINT
 # String interpolation is a fancy term for "we don't have
@@ -18,11 +25,21 @@
 
 weather_data = {
   current: {
-    temperature: 67,
-    conditions: "Sunny"
+    temperature: 78,
+    conditions: "Overcast"
   },
   forecast: [
-    { temperature: 65, conditions: "Mostly Cloudy" },
-    { temperature: 70, conditions: "Partly Cloudy" }
+    { temperature: 55, conditions: "Mostly Cloudy" },
+    { temperature: 71, conditions: "Cloudy" }
   ]
 }
+
+next_temp = weather_data [:forecast][1][:temperature]
+next_cond = weather_data [:forecast][1][:conditions]
+current_temp = weather_data [:current] [:temperature]
+current_conditions = weather_data [:current] [:conditions]
+tomorrow_temp = weather_data [:forecast] [0][:temperature]
+tomorrow_conditions = weather_data [:forecast] [0] [:conditions]
+
+puts "Currently it is #{current_temp} degrees and #{current_conditions}. Tomorrow it will be #{tomorrow_temp} and #{tomorrow_conditions}."
+puts "The next day it we will see #{next_cond} skies, with a temperature of #{next_temp}."

@@ -10,6 +10,23 @@
 
 # If/Else Conditional Logic
 
-# Elsif Conditional Logic
+# Elsif Conditional Logicbl
+Pablito = 5
+Tian = 5
+
+if Pablito > Tian
+    puts "Pablito is elder bro"
+    
+elsif Pablito == Tian
+    puts "Pablito and Tian are twins"
+
+else 
+    puts "Tian is elder bro"
+
+end
+
+
+
+
 
 # Combining Expressions
